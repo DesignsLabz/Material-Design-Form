@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/prism.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="css/opensans.css" />
+    <link type="text/css" rel="stylesheet" href="css/MaterialIcons.css" />
+    <link type="text/css" rel="stylesheet" href="css/nouislider.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h2 class="header-font">Material Design Forms</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <h3>Text Box</h3>
+                <div class="gap"></div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Telephone</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Your First Name" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="input-field">
+                                    <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                    <label for="disabled">Disabled</label>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="input-field">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix2">First Name Textarea</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix2">Last Name Textarea</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="col s6">
+                            <div class="input-field">
+                                <input id="input_text" type="text" data-length="10">
+                                <label for="input_text">Input text</label>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="input-field">
+                                <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <h3>Drop Down</h3>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select multiple>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Multiple Select</label>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="" data-icon="images/sample-1.jpg" class="circle">Option 1</option>
+                            <option value="" data-icon="images/office.jpg" class="circle">Option 2</option>
+                            <option value="" data-icon="images/yuna.jpg" class="circle">Option 3</option>
+                        </select>
+                        <label>Images in select</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="" data-icon="images/sample-1.jpg" class="left circle">Option 1</option>
+                            <option value="" data-icon="images/office.jpg" class="left circle">Option 2</option>
+                            <option value="" data-icon="images/yuna.jpg" class="left circle">Option 3</option>
+                        </select>
+                        <label>Images in select</label>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col s6">
+                        <label>Browser Select</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col s6">
+                        <label>Drop-Down With Category</label>
+                        <select>
+                            <optgroup label="team 1">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </optgroup>
+                            <optgroup label="team 2">
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="input-field">
+                            <select disabled>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Materialize Disabled</label>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <label>Browser Disabled</label>
+                        <select class="browser-default" disabled>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <h3>Radio Button</h3>
+            <div class="gap"></div>
+            <form action="#">
+                <div class="row">
+                    <div class="col s4">
+                        <h5>Default</h5>
+                        <p>
+                            <input name="group1" type="radio" id="test1" />
+                            <label for="test1">Option 1</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="test2" />
+                            <label for="test2">Option 2</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <h5>Selected Radio Button</h5>
+                        <p>
+                            <input class="with-gap" name="group3" type="radio" id="test5" checked />
+                            <label for="test5">Option</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="test4" disabled="disabled" />
+                            <label for="test4">Option</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <h5>With Gap</h5>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test3" />
+                            <label for="test3">Option</label>
+                        </p>
+                    </div>
+                </div>
+            </form>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <h3>Check Box</h3>
+            <div class="gap"></div>
+            <form action="#">
+                <div class="row">
+                    <div class="col s6">
+                        <p>
+                            <input type="checkbox" id="test5" />
+                            <label for="test5">Option (Check-Box)</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="test6" checked="checked" />
+                            <label for="test6">Option (Default Checked Check-Box)</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                            <label for="filled-in-box">Option (Full Filled CheckBox)</label>
+                        </p>
+                    </div>
+                    <div class="col s6">
+                        <p>
+                            <input type="checkbox" id="indeterminate-checkbox" />
+                            <label for="indeterminate-checkbox">Option (Default Check-Box)</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                            <label for="test7">Option (Disabled Checked Check-Box)</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="test8" disabled="disabled" />
+                            <label for="test8">Option (Disabled Full Filled Check-Box)</label>
+                        </p>
+                    </div>
+                </div>
+            </form>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <h3>Switch Button</h3>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col s6">
+                    <!-- Switch -->
+                    <h5>Default</h5>
+                    <div class="switch">
+                        <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span> On
+                        </label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <!-- Disabled Switch -->
+                    <h5>Disabled</h5>
+                    <div class="switch">
+                        <label>
+                            Off
+                            <input disabled type="checkbox">
+                            <span class="lever"></span> On
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <h3>File Upload</h3>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col s6">
+                    <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col s6">
+                    <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <h3>Slider Limit Bar</h3>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col s6">
+                    <form action="#">
+                        <p class="range-field test-slider">
+                            <div id="test-slider"></div>
+                        </p>
+                    </form>
+                </div>
+                <div class="col s6">
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="100" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col s6">
+                    <h3>Date Picker</h3>
+                    <input type="text" class="datepicker" placeholder="Select Date" />
+                </div>
+                <div class="col s6">
+                    <h3>Time Picker</h3>
+                    <input type="text" class="timepicker" placeholder="Select Time" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="footer">
+                © 2017 Squre Design Tech, All rights reserved.
+                <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">Squre Design Tech</a>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/nouislider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+
+    $('select').material_select('destroy');
+
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year,
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        closeOnSelect: false // Close upon selecting a date,
+    });
+
+    $('.timepicker').pickatime({
+        default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+        fromnow: 0, // set default time to * milliseconds from now (using with default = 'now')
+        twelvehour: false, // Use AM/PM or 24-hour format
+        donetext: 'OK', // text for done-button
+        cleartext: 'Clear', // text for clear-button
+        canceltext: 'Cancel', // Text for cancel-button
+        autoclose: false, // automatic close timepicker
+        ampmclickable: true, // make AM PM clickable
+        aftershow: function() {} //Function for after opening timepicker
+    });
+
+    $(document).ready(function() {
+        $('input#input_text, textarea#textarea1').characterCounter();
+    });
+
+    var slider = document.getElementById('test-slider');
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        step: 1,
+        orientation: 'horizontal', // 'horizontal' or 'vertical'
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+    </script>
+</body>
+
+</html>
